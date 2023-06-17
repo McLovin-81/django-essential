@@ -119,6 +119,13 @@ urlpatterns = [
 2. In the project folder -> urls.py:
     - Delete all dependencies with app1
 3. Import the include function
+4. Add an import path but instead of using an app-function it should be a django function -> include
 ''' 
+from django.contrib import admin
 from django.urls import path, include
+
+urlpatterns = [
+    path("admin/", admin.site.urls),
+    path("", include("app1.urls")),
+]
 ```
