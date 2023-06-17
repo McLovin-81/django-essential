@@ -41,3 +41,26 @@ The following folder/files will be created:
 ## Every time an app has been created, the app must be added to the settings folder!
 - projectName
     - settings.py -> INSTALLED_APPS
+```
+"app1"
+```
+
+# Create a view.
+- app1
+    - views.py
+```
+from django.http import HttpResponse
+
+def app1(request):
+    return HttpResponse("Hello, world!")
+```
+- projectName
+    - urls.py
+```
+from app1 import views
+
+urlpatterns = [
+    path("admin/", admin.site.urls),
+    path("app1", views.app1)
+]
+```
