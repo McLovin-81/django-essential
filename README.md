@@ -18,6 +18,10 @@ The following folder/files will be created:
 
 - manage.py
 
+# Run a server, using the default configuration.
+```
+python3 manage.py runserver
+```
 
 # Use the following command to start a new app.
 ```
