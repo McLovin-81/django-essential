@@ -4,14 +4,14 @@ python3 -m pip install django
 python3 -m pip install black
 ```
 
-# Create a new django project using the following command.
+# Create a new django project (Settings folder) using the following command.
 ```
 django-admin startproject projectName .
 ````
 The following folder/files will be created:
 - projectName
     - __init__.py
-    - adgi.py
+    - asgi.py
     - settings.py
     - urls.py
     - wsgi.py
@@ -23,7 +23,17 @@ The following folder/files will be created:
 python3 manage.py runserver
 ```
 
-# Use the following command to start a new app.
+# Use the following command to create a new app.
 ```
-django-admin startapp home
+django-admin startapp app1
 ```
+The following folder/files will be created:
+- app1
+    - migrations
+        - __init__.py
+    - __init__.py
+    - admin.py
+    - apps.py
+    - models.py
+    - tests.py
+    - views.py
