@@ -16,6 +16,7 @@ The following folder/files will be created:
     - urls.py
     - wsgi.py
 
+- manage.py
 
 
 # Use the following command to start a new app.
