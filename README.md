@@ -8,6 +8,15 @@ python3 -m pip install black
 ```
 django-admin startproject projectName .
 ````
+The following folder/files will be created:
+- projectName
+    - __init__.py
+    - adgi.py
+    - settings.py
+    - urls.py
+    - wsgi.py
+
+
 
 # Use the following command to start a new app.
 ```
