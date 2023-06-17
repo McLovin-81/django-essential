@@ -73,7 +73,7 @@ urlpatterns = [
     - templates
         - welcome.html
 
-4. Write function to render HTML page in views.py
+4. Write a function to render HTML page in views.py
 ```
 def app1(request):
     return render(request, "app1/welcome.html", {})
@@ -82,3 +82,24 @@ def app1(request):
     - views.app
 
 # Passing down information.
+1. Write a function in views.py
+```
+from django.http import HttpResponse
+from datetime import datetime
+
+def app1(request):
+    return render(request, "app1/welcome.html", {"today": datetime.today()})
+```
+2. Add the information in the html file.
+```
+<html>
+    <header>
+        <title>App1</title>
+    </header>
+
+    <body>
+        <h1>Welcome to app1</h1>
+        <p>Today is {{today}}</p>
+    </body>
+</html>
+```
