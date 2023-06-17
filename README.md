@@ -15,7 +15,6 @@ The following folder/files will be created:
     - settings.py
     - urls.py
     - wsgi.py
-
 - manage.py
 
 # Run a server, using the default configuration.
@@ -61,10 +60,11 @@ from app1 import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("app1", views.app1)
+    path("app1", views.app1),
 ]
 ```
-# Return HTML pages
+
+# Return HTML pages.
 1. Create a folder (templates) inside an app folder.
 2. Inside the templates folder, create a new folder (app1).
 3. Inside the app1 folder create a HTML file.
@@ -73,8 +73,12 @@ urlpatterns = [
     - templates
         - welcome.html
 
-4. Write the function in views.py
+4. Write function to render HTML page in views.py
 ```
 def app1(request):
     return render(request, "app1/welcome.html", {})
 ```
+- app1
+    - views.app
+
+# Passing down information.
