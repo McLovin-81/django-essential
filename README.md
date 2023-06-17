@@ -72,3 +72,9 @@ urlpatterns = [
 - app1
     - templates
         - welcome.html
+
+4. Write the function in views.py
+```
+def app1(request):
+    return render(request, "app1/welcome.html", {})
+```
