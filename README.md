@@ -37,3 +37,7 @@ The following folder/files will be created:
     - models.py
     - tests.py
     - views.py
+
+## Every time an app has been created, the app must be added to the settings folder!
+- projectName
+    - settings.py -> INSTALLED_APPS
