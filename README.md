@@ -103,3 +103,22 @@ def app1(request):
     </body>
 </html>
 ```
+
+# Eliminate dependencies
+1. Create a file named urls.py in app folder.
+```
+from django.urls import path
+
+from . import views
+
+
+urlpatterns = [
+    path("app1", views.app1),
+]
+```
+2. In the project folder -> urls.py:
+    - Delete all dependencies with app1
+3. Import the include function
+''' 
+from django.urls import path, include
+```
