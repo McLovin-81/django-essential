@@ -120,7 +120,7 @@ urlpatterns = [
     - Delete all dependencies with app1
 3. Import the include function
 4. Add an import path but instead of using an app-function it should be a django function -> include
-''' 
+``` 
 from django.contrib import admin
 from django.urls import path, include
 
