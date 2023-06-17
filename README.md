@@ -64,3 +64,11 @@ urlpatterns = [
     path("app1", views.app1)
 ]
 ```
+# Return HTML pages
+1. Create a folder (templates) inside an app folder.
+2. Inside the templates folder, create a new folder (app1).
+3. Inside the app1 folder create a HTML file.
+
+- app1
+    - templates
+        - welcome.html
