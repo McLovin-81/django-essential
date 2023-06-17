@@ -1,8 +1,8 @@
 # To install django use the following commands
-´´´
+```
 python3 -m pip install django
 python3 -m pip install black
-´´´
+```
 
 # Create a new django project using the following command.
 ```
