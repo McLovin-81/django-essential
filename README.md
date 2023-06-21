@@ -24,7 +24,7 @@ python3 manage.py runserver
 
 # Use the following command to create a new app.
 ```
-django-admin startapp app1
+python manage.py startapp app1
 ```
 The following folder/files will be created:
 - app1
