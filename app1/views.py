@@ -7,5 +7,5 @@ from datetime import datetime
 
 # REQUEST -> RESPONSE or REQUEST HANDLER
 
-def app1(request):
+def showDate(request):
     return render(request, "app1/welcome.html", {"today": datetime.today()})
