@@ -129,5 +129,3 @@ urlpatterns = [
     path("", include("app1.urls")),
 ]
 ```
-
-Until chapter 2.1
