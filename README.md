@@ -104,6 +104,7 @@ def app1(request):
 </html>
 ```
 
+
 # Eliminate dependencies
 1. Create a file named urls.py in app folder.
 ```
@@ -129,3 +130,32 @@ urlpatterns = [
     path("", include("app1.urls")),
 ]
 ```
+
+
+# Apply database (Migrate)
+```
+python3 manage.py migrate
+````
+
+
+# Create a super user
+```
+python3 manage.py createsuperuser
+````
+
+
+# Block access to a page
+1. Import in views.py
+```
+from django.contrib.auth.decorators import login_required
+````
+
+2. Add "@login_required" to a function
+```
+@login_required
+def functionname(request):
+    return render(request, "html path", {})
+````
+
+
+Video -> Creating your first model
